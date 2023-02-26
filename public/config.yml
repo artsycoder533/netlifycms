@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "/images"
+
+collections:
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home Page"
+        name: "index"
+        file: "./data/index.yml"
+        fields:
+          - {label: Heading, name: heading, widget: string}
+          - {label: Sub Heading, name: subHeading, widget: string}
+          - {label: Background Image, name: background_image, widget: image}
