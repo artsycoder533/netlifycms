@@ -1,4 +1,4 @@
-console.log(cms)
+console.log(CMS)
 // Register the collection for the Index data
 CMS.registerPreviewStyle("/admin/cms.css");
 CMS.registerCollection({
@@ -8,7 +8,7 @@ CMS.registerCollection({
     {
       label: "Index",
       name: "index",
-      file: "../public/data/index.yml",
+      file: "../../data/index.yml",
       fields: [
         {
           label: "Heading",
