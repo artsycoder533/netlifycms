@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "/images"
+media_folder: "/..public/images"
 
 collections:
   - label: "Pages"
@@ -10,7 +10,7 @@ collections:
     files:
       - label: "Home Page"
         name: "index"
-        file: "./data/index.yml"
+        file: "../data/index.yml"
         fields:
           - {label: Heading, name: heading, widget: string}
           - {label: Sub Heading, name: subHeading, widget: string}
