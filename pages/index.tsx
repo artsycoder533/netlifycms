@@ -14,7 +14,9 @@ type IndexProps = {
   data: IndexData;
 };
 const Home: NextPage<IndexProps> = ({ data }) => {
+  console.log('data is ', data)
   const { heading, subheading, background_image } = data;
+  console.log(heading, subheading, background_image)
 
   return (
     <div>
@@ -42,12 +44,13 @@ const Home: NextPage<IndexProps> = ({ data }) => {
 export default Home;
 
 export const getStaticProps: GetStaticProps = async () => {
-  const configPath = path.join(process.cwd(), "public", "config.yml")
-  const config = yaml.load(fs.readFileSync(configPath, "utf-8")) as IndexData
+  const indexFilePath = path.join(process.cwd(), "public", "data", "index.yml")
+  const indexData = fs.readFileSync(indexFilePath, "utf-8");
+  const indexConfig = yaml.load(indexData) as IndexData;
 
  return {
    props: {
-     data: config,
+     data: indexConfig,
    },
  };
 };

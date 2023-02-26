@@ -5,4 +5,4 @@ subheading: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga anim
             vero magnam velit natus repudiandae odio aliquam mollitia repellat
             dolore? Excepturi sequi quis culpa quo porro aperiam ab doloremque
             alias ipsam."
-background_image: "../../public/images/hero-bg.jpg"
+background_image: "/images/hero-bg.jpg"

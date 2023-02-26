@@ -1,4 +1,4 @@
-
+console.log(cms)
 // Register the collection for the Index data
 CMS.registerPreviewStyle("/admin/cms.css");
 CMS.registerCollection({
