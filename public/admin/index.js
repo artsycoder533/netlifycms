@@ -1,5 +1,3 @@
-import CMS from "netlify-cms-app";
-import Index from "../public/data/index.yml";
 
 // Register the collection for the Index data
 CMS.registerPreviewStyle("/admin/cms.css");
